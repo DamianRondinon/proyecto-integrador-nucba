@@ -246,7 +246,7 @@ header label {
 
 @media (max-width: 400px) {
   html {
-    font-size: 60%;
+    font-size: 100%;
   }
 
 }
