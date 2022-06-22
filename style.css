@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,900&family=Montserrat:wght@300;400;700&family=Poppins:wght@100;200;300;400&display=swap");
+
+:root {
+  --light-blue: #8ecae6;
+  --yellow: #ffb703;
+  --strong-cyan: #219ebc;
+
+  --gradient: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(142, 207, 230, 1) 72%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+*::selection {
+  background-color: var(--light-blue);
+  color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  background: #fff;
+}
+
+section {
+  min-height: 100vh;
+  padding: 0 9%;
+  padding-top: 7.4rem;
+}
+
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  border-radius: 5rem;
+  background: var(--gradient);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.3);
+  transition: all .3s ease-in-out;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+  padding: 0rem 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.logo {
+  width: 8rem;
+}
+
+header .navbar a {
+  font-size: 0.9rem;
+  margin-left: 1.2rem;
+  color: var(--light-blue);
+}
+
+header .navbar a:hover {
+  color: var(--strong-cyan);
+}
+
+header input {
+  display: none;
+}
+
+header label {
+  font-size: 3rem;
+  color: #48cae4;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.inicio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(5, 7, 12, 0.2), rgba(5, 7, 12, 0.3)),
+    url(imgs/fondo-inicio.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.inicio .img-app img {
+  width: 55%;
+  animation: float 3s linear infinite;
+  filter: drop-shadow(2rem 2em 20px rgba(0, 0, 0, 0.6));
+  margin-left: 12rem;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(-2.5rem);
+  }
+}
+
+.inicio .content h3 {
+  font-size: 3.5rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.inicio .content h3 span {
+    color: var(--yellow);
+    text-transform: uppercase;
+}
+
+
+
+.inicio .content h4 {
+    font-size: 1.9rem;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    padding: 1rem 0;
+  }
+  
+  .inicio .content h4 span {
+      color: #fffcf2;
+      text-transform: uppercase;
+  }
+
+
+  .inicio .content p {
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    padding: 1rem 0;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 991px){
+    section{
+        padding: 0 3%;
+        padding-top: 7.5rem;
+    }
+}
+
+
+@media (max-width: 600px){
+
+  header label {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #f1faee;
+    padding: 1rem 2rem;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    transform-origin: top;
+    transform: scaleY(0);
+    opacity: 0;
+  }
+
+  header .navbar a {
+    display: block;
+    margin: 2rem 0;
+    font-size: 1rem;
+  }
+
+  header input:checked ~ .navbar {
+    transform: scaleY(1);
+    opacity: 1;
+    transition: .3s linear;
+  }
+
+  header input:checked ~ label::before {
+    content: "\f00d";
+  }
+
+  .inicio{
+    flex-flow: column-reverse;
+  }
+
+  .inicio .img-app img{
+    width: 50%;
+  }
+
+  .inicio .content h3{
+    font-size: 3.6rem;
+  }
+
+  .inicio .content p{
+    font-size: 1.5rem;
+  }
+
+}
+
+
+@media (max-width: 400px) {
+  html {
+    font-size: 60%;
+  }
+
+}
