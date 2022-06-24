@@ -225,7 +225,7 @@ header label {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   margin-top: 5%;
 }
 
@@ -238,7 +238,7 @@ header label {
 }
 
 .nosotros .column .text {
-  flex: 1 1 20rem ;
+  flex: 1 1 20rem;
 }
 
 .nosotros .column .text h3 {
@@ -256,12 +256,11 @@ header label {
 .nosotros .column .text .icono-p {
   width: 8rem;
   margin-top: 8%;
-
 }
 
 /* section proyectos */
 
-.title-proyecto{
+.title-proyecto {
   text-align: center;
   color: var(--strong-cyan);
   background-clip: text;
@@ -270,45 +269,43 @@ header label {
   margin-bottom: 5rem;
 }
 
-.proyectos .box-container{
+.proyectos .box-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.proyectos .box-container .box{
+.proyectos .box-container .box {
   flex: 1 1 30rem;
   background: #fff;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   border: 0.5rem solid rgba(0, 0, 0, 0.1);
   box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
   margin: 1.5rem;
   padding: 4rem 3rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   text-align: center;
   transition: all 400ms ease;
   cursor: default;
 }
 
-.proyectos .box-container .box:hover{
+.proyectos .box-container .box:hover {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
   transform: translateY(-3%);
 }
 
-
-
-.proyectos .box-container .box img{
+.proyectos .box-container .box img {
   height: 15rem;
 }
 
-.proyectos .box-container .box h3{
+.proyectos .box-container .box h3 {
   font-size: 2rem;
   color: black;
   padding: 1rem;
 }
 
-.proyectos .box-container .box p{
+.proyectos .box-container .box p {
   font-size: 1.3rem;
   color: #666;
   padding: 1rem 0;
@@ -316,7 +313,7 @@ header label {
 
 /* newsletter*/
 
-.newsletter{
+.newsletter {
   text-align: center;
   padding: 5rem 1rem;
   background: url(imgs/fondo-inicio.jpg);
@@ -324,13 +321,13 @@ header label {
   background-position: center;
 }
 
-.newsletter h3{
+.newsletter h3 {
   color: #000;
   font-size: 3rem;
   margin-bottom: 3%;
 }
 
-.newsletter p{
+.newsletter p {
   color: #000;
   font-size: 2rem;
   font-weight: 600;
@@ -338,11 +335,11 @@ header label {
   width: 90%;
 }
 
-.newsletter form{
+.newsletter form {
   display: flex;
   max-width: 80%;
-  border: .3rem solid var(--strong-cyan);
-  padding: .5rem;
+  border: 0.3rem solid var(--strong-cyan);
+  padding: 0.5rem;
   border-radius: 5rem;
   margin: 2rem auto;
   height: 5.5rem;
@@ -350,7 +347,7 @@ header label {
   background: #f1faee;
 }
 
-.newsletter form input[type="email"]{
+.newsletter form input[type="email"] {
   padding: 0 2rem;
   font-size: 1.7rem;
   background: none;
@@ -358,7 +355,7 @@ header label {
   color: #000;
 }
 
-.newsletter form input[type="submit"]{
+.newsletter form input[type="submit"] {
   background: #48cae4;
   width: 20rem;
   font-size: 1.7rem;
@@ -368,20 +365,20 @@ header label {
   color: #000;
 }
 
-.newsletter form input[type="submit"]:hover{
+.newsletter form input[type="submit"]:hover {
   color: #fff;
 }
 
 /* participantes */
 
-.participantes .box-container{
+.participantes .box-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.participantes .box-container .box{
+.participantes .box-container .box {
   background: #fff;
   margin: 1rem;
   padding: 1rem;
@@ -393,7 +390,7 @@ header label {
   border-radius: 1rem;
 }
 
-.participantes .box-container .box img{
+.participantes .box-container .box img {
   border-radius: 100%;
   object-fit: cover;
   height: 10rem;
@@ -401,18 +398,18 @@ header label {
   margin-top: 2rem;
 }
 
-.participantes .box-container .box h3{
+.participantes .box-container .box h3 {
   color: #219ebc;
   font-size: 2rem;
 }
 
-.participantes .box-container .box .icono-part i{
+.participantes .box-container .box .icono-part i {
   color: #403d39;
   font-size: 2.5rem;
   padding: 1rem 0;
 }
 
-.participantes .box-container .box .comment{
+.participantes .box-container .box .comment {
   color: #403d39;
   font-size: 1.6rem;
   padding: 2rem;
@@ -420,7 +417,7 @@ header label {
 
 /* contact */
 
-.contact{
+.contact {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -428,69 +425,71 @@ header label {
   padding-bottom: 4rem;
 }
 
-.contact .image{
+.contact .image {
   flex: 1 1 40rem;
 }
 
-.contact .image img{
+.contact .image img {
   width: 100%;
   padding: 2rem;
 }
 
-.contact form{
+.contact form {
   flex: 1 1 40rem;
   padding: 2rem 3rem;
   border: 1rem solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   border-radius: 3rem;
 }
 
-.contact form .title{
+.contact form .title {
   text-align: left;
   padding: 0;
   padding-bottom: 2rem;
 }
 
-.contact form .inputBox{
+.contact form .inputBox {
   position: relative;
 }
 
-.contact form .inputBox input, .contact form .inputBox textarea{
+.contact form .inputBox input,
+.contact form .inputBox textarea {
   width: 100%;
   background: none;
   color: #403d39;
   margin: 1.5rem 0;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   font-size: 1.7rem;
-  border-bottom: .1rem solid rgba(0, 0, 0, 0.1);
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
   text-transform: none;
 }
 
-.contact form .inputBox textarea{
+.contact form .inputBox textarea {
   resize: none;
   height: 13rem;
 }
 
-.contact form .inputBox label{
+.contact form .inputBox label {
   position: absolute;
-  top: 1.7rem; left: 0;
+  top: 1.7rem;
+  left: 0;
   font-size: 1.7rem;
-  color:#403d39;
-  transition: .2s linear;
+  color: #403d39;
+  transition: 0.2s linear;
 }
 
 .contact form .inputBox input:focus ~ label,
 .contact form .inputBox input:valid ~ label,
 .contact form .inputBox textarea:focus ~ label,
-.contact form .inputBox textarea:valid ~ label{
-  top: -.5rem;
+.contact form .inputBox textarea:valid ~ label {
+  top: -0.5rem;
   font-size: 1.5rem;
   color: rgb(221, 181, 20);
 }
 
 /* footer */
 
-.footer{
+.footer {
   text-align: center;
   padding: 4% 1rem;
   background: url(imgs/fondo-inicio.jpg);
@@ -498,33 +497,20 @@ header label {
   background-position: center;
 }
 
-
-.footer h3{
+.footer h3 {
   text-align: center;
   margin-bottom: 5%;
   font-size: 2.5rem;
 }
 
-
-.footer h3, a, i{
+.footer h3,
+a,
+i {
   font-size: 3rem;
   margin-bottom: 5%;
   color: #000;
   padding: 1rem;
-  
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* media queries */
 
@@ -537,7 +523,7 @@ header label {
 @media (max-width: 991px) {
   section {
     padding: 0 3%;
-    padding-top: 9.5rem;
+    padding-top: 0.5rem;
   }
 }
 
