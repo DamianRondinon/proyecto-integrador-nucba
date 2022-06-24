@@ -38,27 +38,39 @@ body {
 }
 
 section {
-  min-height: 100vh;
+  min-height: 110vh;
   padding: 0 9%;
-  padding-top: 7.4rem;
+  padding-top: 7.5rem;
 }
 
-.btn{
+.btn {
   display: inline-block;
   margin-top: 1rem;
   padding: 1rem 3rem;
   border-radius: 5rem;
   background: var(--gradient);
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 600;
   color: rgb(0, 0, 0);
   cursor: pointer;
-  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.3);
-  transition: all .3s ease-in-out;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
 }
 
-.btn:hover{
-    transform: scale(1.1);
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.title {
+  text-align: center;
+  background: var(--strong-cyan);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 1rem;
 }
 
 header {
@@ -66,7 +78,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  height: 5rem;
+  height: 8rem;
   background: #fff;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
   padding: 0rem 2%;
@@ -77,12 +89,12 @@ header {
 }
 
 .logo {
-  width: 8rem;
+  width: 11rem;
 }
 
 header .navbar a {
-  font-size: 0.9rem;
-  margin-left: 1.2rem;
+  font-size: 1.5rem;
+  margin-left: 2rem;
   color: var(--light-blue);
 }
 
@@ -117,6 +129,7 @@ header label {
   animation: float 3s linear infinite;
   filter: drop-shadow(2rem 2em 20px rgba(0, 0, 0, 0.6));
   margin-left: 12rem;
+  margin-top: 2.5rem;
 }
 
 @keyframes float {
@@ -130,36 +143,129 @@ header label {
 }
 
 .inicio .content h3 {
-  font-size: 3.5rem;
+  font-size: 5.5rem;
   color: #fff;
   text-transform: uppercase;
 }
 
 .inicio .content h3 span {
-    color: var(--yellow);
-    text-transform: uppercase;
+  color: var(--yellow);
+  text-transform: uppercase;
+}
+
+.inicio .content h4 {
+  font-size: 4rem;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  padding: 1rem 0;
+}
+
+.inicio .content h4 span {
+  color: #fffcf2;
+  text-transform: uppercase;
+}
+
+.inicio .content p {
+  font-size: 1.9rem;
+  color: rgb(0, 0, 0);
+  padding: 1rem 0;
+}
+
+/* publicidad */
+
+.slider {
+  overflow: hidden;
+}
+
+.slider figure {
+  display: flex;
+  width: 500%;
+  position: relative;
+  left: 0;
+  animation: 20s slider infinite;
+}
+
+.slider figure img {
+  width: 12%;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -50%;
+  }
+  40% {
+    left: -50%;
+  }
+  55% {
+    left: -100%;
+  }
+  65% {
+    left: -100%;
+  }
+  75% {
+    left: -150%;
+  }
+  85% {
+    left: -150%;
+  }
+  100% {
+    left: -200%;
+  }
+}
+
+/* nosotros */
+
+.nosotros .column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap:wrap;
+  margin-top: 5%;
+}
+
+.nosotros .column .img {
+  flex: 1 1 40rem;
+}
+
+.nosotros .column .img img {
+  width: 100%;
+}
+
+.nosotros .column .text {
+  flex: 1 1 20rem ;
+}
+
+.nosotros .column .text h3 {
+  font-size: 2.9rem;
+  color: var(--yellow);
+  margin-top: 15%;
+}
+
+.nosotros .column .text p {
+  font-size: 1.8rem;
+  color: #666;
+  padding: 1rem 0;
+}
+
+.nosotros .column .text .icono-p {
+  width: 8rem;
+  margin-top: 8%;
+
 }
 
 
 
-.inicio .content h4 {
-    font-size: 1.9rem;
-    color: rgb(0, 0, 0);
-    text-transform: uppercase;
-    padding: 1rem 0;
-  }
-  
-  .inicio .content h4 span {
-      color: #fffcf2;
-      text-transform: uppercase;
-  }
 
 
-  .inicio .content p {
-    font-size: 1rem;
-    color: rgb(0, 0, 0);
-    padding: 1rem 0;
-  }
+
+
+
 
 
 
@@ -180,16 +286,14 @@ header label {
   }
 }
 
-@media (max-width: 991px){
-    section{
-        padding: 0 3%;
-        padding-top: 7.5rem;
-    }
+@media (max-width: 991px) {
+  section {
+    padding: 0 3%;
+    padding-top: 7.5rem;
+  }
 }
 
-
-@media (max-width: 600px){
-
+@media (max-width: 600px) {
   header label {
     visibility: visible;
     opacity: 1;
@@ -212,41 +316,41 @@ header label {
   header .navbar a {
     display: block;
     margin: 2rem 0;
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   header input:checked ~ .navbar {
     transform: scaleY(1);
     opacity: 1;
-    transition: .3s linear;
+    transition: 0.3s linear;
   }
 
   header input:checked ~ label::before {
     content: "\f00d";
   }
 
-  .inicio{
+  .inicio {
     flex-flow: column-reverse;
   }
 
-  .inicio .img-app img{
+  .inicio .img-app img {
     width: 50%;
   }
 
-  .inicio .content h3{
+  .inicio .content h3 {
     font-size: 3.6rem;
   }
 
-  .inicio .content p{
+  .inicio .content p {
     font-size: 1.5rem;
   }
-
+  .nosotros .column .img {
+    display: none;
+  }
 }
-
 
 @media (max-width: 400px) {
   html {
-    font-size: 60%;
+    font-size: 100%;
   }
-
 }
